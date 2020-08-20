@@ -12,9 +12,9 @@
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|message|text|null: false|
-|text|text|null: false|
-|phot|integer|null: false, foreign_key: true|
+|message|text||
+|image|text||
+|user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - has_many :comments
@@ -24,12 +24,12 @@
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|integer|null: false, foreign_key: true|
-|chat_member|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 |chat_member_name|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :
-- belongs_to :
+- belongs_to :users
+- belongs_to :posts
 
 ## groups_usersテーブル
 |Column|Type|Options|
