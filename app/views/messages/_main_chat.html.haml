@@ -1,1 +1,29 @@
-.Main-chat
+.chat
+  .right-header
+    .header-name
+      .group-name
+        test
+      .member-date
+        Member : test
+    .edit-button
+      Edit
+  
+  .main-field
+    .message-box
+      .message-info
+        .user-name
+          test
+        .time
+          2020/8/26(Wed) 17:00:01
+      .user-message
+        test
+  
+  .footer
+    .contents
+      %form.form__message
+        .input-text
+          %input{type: "text", placeholder:"type a message", class:"form__content"}        
+          %label{class: "form__image"}
+            = icon('far', 'image')
+            %input{type: "file", class:"form__file"}
+        %input{type: "submit",value:"Send", class:"form__submit"}
