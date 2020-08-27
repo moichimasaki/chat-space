@@ -5,16 +5,26 @@
       = current_user.name
       %ul.icons
         %li.edit
-          = link_to new_group_path(current_user) do
+          = link_to '#' do
             =icon('far', 'edit')
         %li.config
           = link_to edit_user_path(current_user) do
             =icon('far', 'cog')
   .group
-    - current_user.groups.each do |group|
-      .group-list
-        =link_to '#' do
-          .group-name-2
-            = group.name
-          .group-message
-            メッセージはまだありません
+    .group-list
+      .group-name
+      test
+      .group-message
+      test
+  
+    .group-list
+      .group-name
+      test
+      .group-message
+      test
+    
+    .group-list
+      .group-name
+      test
+      .group-message
+      test
