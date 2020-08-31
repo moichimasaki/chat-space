@@ -2,28 +2,24 @@
   .right-header
     .header-name
       .group-name
-        test
+        = @group.name
       .member-date
-        Member : test
+        Member : 
+        - @group.users.each do |user|
+          = user.name
     .edit-button
-      Edit
-  
+      = link_to edit_group_path(@group), class: 'current-group__edit-btn' do
+        Edit
+
   .main-field
-    .message-box
-      .message-info
-        .user-name
-          test
-        .time
-          2020/8/26(Wed) 17:00:01
-      .user-message
-        test
+    = render @messages
   
   .footer
     .contents
-      %form.form__message
+      = form_with model: [@group, @message], html: {class: "form__message"}, local: true do |f|
         .input-text
-          %input{type: "text", placeholder:"type a message", class:"form__content"}        
-          %label{class: "form__image"}
-            = icon('far', 'image')
-            %input{type: "file", class:"form__file"}
-        %input{type: "submit",value:"Send", class:"form__submit"}
+          = f.text_field :content, class: "form__content", placeholder: 'type a message'
+          = f.label :image, class: "form__image" do
+            = icon('fas', 'image')
+            = f.file_field :image, class: "form__file"
+        = f.submit 'Send', class: "form__submit"
