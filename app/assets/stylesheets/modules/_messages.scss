@@ -55,13 +55,19 @@
     .group-list{
       padding: 20px 0 40px;
     }
+
+    .group-list a {
+      text-decoration: none;
+    }
   
-      .group-name{
+      .group-name-2{
         font-size: 15px;
+        color: #ffffff;
       }
 
       .group-message{
         font-size: 11px;
         margin-top: 5px;
+        color: #ffffff;
       }
 

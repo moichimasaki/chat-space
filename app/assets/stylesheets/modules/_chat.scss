@@ -81,6 +81,8 @@
 }
 
 .contents{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     background-color: #fff;
     position: relative;
@@ -88,7 +90,10 @@
 
 .form__message{
   display: flex;
+  border: none;
   height: 50px;
+  width: 100%;
+  padding: 0 0 0 15px;
 }
 
 .input-text{
