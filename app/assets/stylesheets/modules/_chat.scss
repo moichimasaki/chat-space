@@ -35,8 +35,13 @@
     line-height: 40px;
     margin-top: 28px;
     padding: 0 20px;
-    text-decoration: none;
 }
+
+.current-group__edit-btn{
+  color: #38AEF0;
+  text-decoration: none;
+}
+
 
 .main-field{
   background-color: #fafafa;
@@ -83,8 +88,6 @@
 .contents{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    background-color: #fff;
     position: relative;
 }
 
@@ -97,7 +100,6 @@
 }
 
 .input-text{
-  display:flex;
   width: 100%;
   position: relative;
 }
@@ -106,6 +108,7 @@
   border: none;
   height: 50px;
   width: 100%;
+  padding: 0 45px 0 15px;
 }
 
 .form__image{
