@@ -35,13 +35,22 @@
         justify-content: end;
       }
 
-        .fa-edit{
+        .edit{
           margin-left: 5px;
+        }
+        
+        .fa-edit{
           color: #fff;
+          font-size: 16px;
+        }
+
+        .config{
+          margin-left: 5px;
         }
         
         .fa-cog{
-          margin-left: 5px;
+          color: #fff;
+          font-size: 16px;
                 }
   
   .group{
